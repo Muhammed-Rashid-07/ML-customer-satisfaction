@@ -4,7 +4,7 @@ from steps.evaluation import evaluate_model
 from steps.clean_data import clean_df
 from steps.model_train import train_model
 
-@pipeline
+@pipeline(enable_cache=True)
 def train_pipeline(data_path: str):
     '''
     Data pipeline for training the model.
@@ -14,12 +14,7 @@ def train_pipeline(data_path: str):
     '''
     # Ingest data using the ingest_df step
     df = ingest_df(data_path=data_path)
+    X_train, X_test, y_train, y_test = clean_df(df=df)
+    model = train_model(X_train=X_train,y_train=y_train)
+    r2_score, rmse = evaluate_model(model=model,X_test=X_test,y_test=y_test)
     
-    # Perform data cleaning using the clean_df step
-    df = clean_df(df)
-    
-    # Train the model using the train_model step
-    train_model(df)
-    
-    # Evaluate the model using the evaluate_model step
-    evaluate_model(df)
