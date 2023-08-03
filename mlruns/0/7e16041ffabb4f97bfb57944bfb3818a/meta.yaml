@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/MUHAMMED%20RASHID/desktop/mlops2/mlruns/0/7e16041ffabb4f97bfb57944bfb3818a/artifacts
+end_time: 1690818892215
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7e16041ffabb4f97bfb57944bfb3818a
+run_name: indecisive-auk-712
+run_uuid: 7e16041ffabb4f97bfb57944bfb3818a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690818886875
+status: 3
+tags: []
+user_id: rashid

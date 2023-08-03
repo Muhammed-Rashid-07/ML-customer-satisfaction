@@ -26,7 +26,6 @@ class IngestData:
 def ingest_df( data_path:str ) -> pd.DataFrame:
     '''
     Ingesting data from the datapath,
-    
     Args: 
         data path: path to the data.
         
@@ -36,6 +35,7 @@ def ingest_df( data_path:str ) -> pd.DataFrame:
     try:
         ingest_data = IngestData(data_path)
         df = ingest_data.get_data()
+        logging.info("Ingesting data completed.")
         return df
     except Exception as e:
         logging.error("Error while ingesting data")

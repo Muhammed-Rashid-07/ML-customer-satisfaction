@@ -1,0 +1,14 @@
+digest: 363f6399
+name: dataset
+profile: '{"num_rows": 92487, "num_elements": 1294818}'
+schema: '{"mlflow_colspec": [{"type": "long", "name": "payment_sequential"}, {"type":
+  "long", "name": "payment_installments"}, {"type": "double", "name": "payment_value"},
+  {"type": "long", "name": "customer_zip_code_prefix"}, {"type": "long", "name": "order_item_id"},
+  {"type": "double", "name": "price"}, {"type": "double", "name": "freight_value"},
+  {"type": "double", "name": "product_name_lenght"}, {"type": "double", "name": "product_description_lenght"},
+  {"type": "double", "name": "product_photos_qty"}, {"type": "double", "name": "product_weight_g"},
+  {"type": "double", "name": "product_length_cm"}, {"type": "double", "name": "product_height_cm"},
+  {"type": "double", "name": "product_width_cm"}]}'
+source: '{"tags": {"mlflow.user": "rashid", "mlflow.source.name": "run_pipeline.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "ff86b06121dab19dc4fe25159945252309d2525a"}}'
+source_type: code

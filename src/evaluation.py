@@ -72,12 +72,11 @@ class RMSE(Evaluation):
         Returns:
             float: rmse
         """
-        def calculate_scores(self, y_true: np.ndarray, y_pred: np.ndarray):
-            try:
-                logging.info("Calculating MSE")
-                rmse = mean_squared_error(y_pred=y_pred,y_true=y_true,squared=False)
-                logging.info("MSE: {}".format(rmse))
-                return rmse
-            except Exception as e:
-                logging.error("Error in calculating MSE, {}".format(e))
-                raise e
+        try:
+            logging.info("Calculating MSE")
+            rmse = mean_squared_error(y_pred=y_pred,y_true=y_true,squared=False)
+            logging.info("MSE: {}".format(rmse))
+            return rmse
+        except Exception as e:
+            logging.error("Error in calculating MSE, {}".format(e))
+            raise e
